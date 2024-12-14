@@ -120,3 +120,19 @@ h1{
 button:hover {
     background-color: #45a049;
 }
+.button-container {
+            text-align: left;
+        }
+        .book-now-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .book-now-btn:hover {
+            background-color: #45a049;
+        }

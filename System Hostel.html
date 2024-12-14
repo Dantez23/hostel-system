@@ -45,12 +45,10 @@
                             Book Your Stay: With affordable rates starting from priceto what we offer in,London Hostel is the best value for your money in City. Book your room today via our website or booking platform.
 
                             </a>
-
                     </div>
                 </li>
 
             <li><a href="#">About</a>
-
 
             <li class="dropdown">
                 <a href="#">Services</a>
@@ -76,6 +74,19 @@
                     <a href="#"><u>Weekly prices</u></a>
                     <a href="#">Sinlgle room-15000Ksh </a>
                     <a href="#">Special room-32000Ksh+free balanced breakfirst</a>
+                    <a href=""><form method="POST">
+        {% csrf_token %}
+        <label for="amount_due">Amount Due</label><br>
+        <input type="number" step="0.01" id="amount_due" name="amount_due"><br>
+
+        <label for="amount_paid">Amount Paid</label><br>
+        <input type="number" step="0.01" id="amount_paid" name="amount_paid"><br>
+
+        <label for="payment_date">Payment Date</label><br>
+        <input type="date" id="payment_date" name="payment_date"><br>
+
+        <button type="submit">Submit Payment</button>
+    </form></a>
                 </div>
             </li>
 
@@ -140,8 +151,11 @@
         <input type="text" id="contact_number" name="contact_number">
         <br><br>
 
-        <button onclick="">Book Now</button>
-        <button type="submit">Delete</button>
+
+         <div class="button-container">
+            <a href="payment-methods.html" class="book-now-btn">Book Now</a>
+        </div>
+
     </form>
    <br><br>
    <footer class="footer">
